@@ -2,11 +2,24 @@
 This document serves as a guide for setting up SSL with the [official MySQL Docker image](https://hub.docker.com/_/mysql). 
 
 ## Contents
-1. [Directory tree](#directory-tree) 
-2. [Generating Certificates and Keys](#generating-certificates-and-keys)
-3. [Creating the Dockerfile with certificates and keys](#creating-the-dockerfile-with-certificates-and-keys)
-4. [Building the custom image](#building-the-custom-image)
-5. [Starting your container with SSL enabled](#starting-your-container-with-ssl-enabled)
+
+1. [Getting Started](#getting-started)
+2. [Directory tree](#directory-tree) 
+3. [Generating Certificates and Keys](#generating-certificates-and-keys)
+4. [Creating the Dockerfile with certificates and keys](#creating-the-dockerfile-with-certificates-and-keys)
+5. [Building the custom image](#building-the-custom-image)
+6. [Starting your container with SSL enabled](#starting-your-container-with-ssl-enabled)
+
+## Getting Started
+Clone this repository
+```bash
+$ git clone git@github.com:Dansyuqri/docker_mysql_ssl.git
+```
+
+Work in the directory
+```bash
+$ cd docker_mysql_ssl
+```
 
 ## Directory tree
 The following shows the directory structure. The certs and keys are to-be-generated in the `certs/` folder using the `gen_certs_rsa.sh` script. However, the other files should be placed accordingly.
